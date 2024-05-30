@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav id="desktop-nav">
+        <div class="logo">Arina <span class="logo color">Dwi</span></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger -->
+    <nav id="hamburger-nav">
+        <div class="logo">Arina Dwi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="">
+        </div>
+
+        <!-- Text Section -->
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Arina <span>Dwi</span> Safitri</h1>
+            <p class="section__text__p2"> I <span class="multiple-text"></span></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Arina.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/arina-dwi-safitri/'" />
+                <img src="./assets/github.png" alt="My Github Profile" class="icon"
+                    onclick="location.href='https://github.com/arinadwi14'" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="profile picture" class="about-pic">
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Internship as a Web developer for 3 months</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor's Degree in Informatics Engineering at Dian Nuswantoro University</p>
+                        <br/>
+                        <p>Bangkit academy 2022 graduates learning path Mobile Development</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Graduated from Dian Nuswantoro University Semarang in 2023, majoring in Informatics Engineering. Have an internship experience for 3 months
+                        at PT Telkom Regional 4, as a web developer in the team. 
+                        Interested in the field of frontend web developers. 
+                        Individuals who are detailed, disciplined.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skill'">
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skill">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skill</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>HTML/CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>UI/UX Figma</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Other</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>Kotlin</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/hitani.png" alt="Project 1" class="project-img">
+                    </div>
+
+                    <h2 class="skill-sub-title project-title">A plant disease detection app 'Hi-Tani'</h2>
+                    <p>Bangkit Academy 2022 Program</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Hi-TaniDev/MD-Progress'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/hera.png" alt="Project 2" class="project-img">
+                    </div>
+
+                    <h2 class="skill-sub-title project-title">Android-based woman safety app 'HERA'</h2>
+                    <p>Final year project</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/arinadwi14/Hera-App'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/sobi.png" alt="Project 3" class="project-img">
+                    </div>
+
+                    <h2 class="skill-sub-title project-title">Forum website for Indihome 'SOBI'</h2>
+                    <br/>
+                    <p>Internship project at Telkom Regional IV DIY & Jateng</p>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:arinasafitri1401@gmail.com">arinasafitri1401@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/arina-dwi-safitri/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Arina Dwi Safitri. All Rights Reserved.</p>
+    </footer>
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
